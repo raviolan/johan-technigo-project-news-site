@@ -2,3 +2,29 @@ html {
   background: #0025ff;
   color: #fff;
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 70px;
+  color: white;
+}
+
+.navbar-hamburger {}
+
+.nav-links {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+
+}
+
+.menu-cluster {
+  display: flex;
+  justify-self: flex-end;
+}
