@@ -38,19 +38,30 @@ body {
 
 .navbar-menu.active {
   display: flex;
-  flex-direction: column;
 }
 
-.navbar-menu {}
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+
+}
 
 
+.navbar-hamburger {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-around;
+  height: 30px;
 
-.navbar-hamburger {}
+}
 
 .navbar-hamburger .bar {
   width: 30px;
   height: 4px;
-  background-color:
+  background-color: white;
+
 
 }
 
