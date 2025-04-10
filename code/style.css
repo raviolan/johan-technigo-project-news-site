@@ -25,9 +25,6 @@ body {
   justify-content: space-between;
   border: 5px solid white;
   margin-top: -1rem;
-  /*Padding runt hela som jag lade till ovanför, jag tog bort den här för headerns skull för det behöver inte va så mkt luft. men det är bara tycke och smak. */
-
-
 
 }
 
@@ -36,18 +33,34 @@ body {
   font-size: 100px;
   color: white;
   font-size: 2rem;
-  /*Från och med nu, som du ser, så definierar vi font-size i rem. Det innebär att 2rem som det står här, är baserat på din grunddefinierade font-size (rad 16), och din logga ska vara dubbelt så stor som grunddefintionen. osv.*/
+
 }
 
-.nav-links {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
-  font-size: 1.2rem;
+.navbar-menu.active {
+  display: flex;
+  flex-direction: column;
 }
+
+.navbar-menu {}
+
+
+
+.navbar-hamburger {}
+
+.navbar-hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color:
+
+}
+
 
 a {
+  font-family: 'Courier New', Courier, monospace;
   color: #fff;
+  font-size: 0.8rem;
 }
+
 
 h1 {
   font-family: 'Courier New', Courier, monospace;
@@ -61,12 +74,14 @@ h1 {
 h2 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 2rem;
+  padding-top: 3rem;
 
 }
 
 h3 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.5rem;
+  padding-top: 2rem;
 
 }
 
@@ -76,13 +91,17 @@ h3 {
 .intro-copy {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
-  margin-bottom: 70px;
+  margin-bottom: 2rem;
 
 }
 
 .topfive {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2rem;
+}
+
+.topfourheadlines {
+  padding-top: 2rem;
 
 }
 
