@@ -1,6 +1,22 @@
-html {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* detta övre kommandot med stjärna lade jag till för att det blir typ som en reset baserad på skärmstorlek. Se det som att städa sin whitebord innan man börjar rita på den.*/
+
+html,
+body {
   background: #0025ff;
   color: #fff;
+  height: 100%;
+  width: 100%;
+  /*height och width här refererar till hela grundkoden/din body. Nu har vi berättat för din body att den alltid ska ta upp hela den tillgängliga skärmstorleken.*/
+  font-size: 16px;
+  /*Här sätter vi en fast punktstorlek som gäller för hela din webb. Den definieras från och med nu, i resten av din kod, som 1rem*/
+  padding: 1rem;
+  /*Lade till lite padding runt hela så det blir en skönare användarupplevelse*/
 }
 
 .navbar {
@@ -8,6 +24,8 @@ html {
   flex-direction: row;
   justify-content: space-between;
   border: 5px solid white;
+  margin-top: -1rem;
+  /*Padding runt hela som jag lade till ovanför, jag tog bort den här för headerns skull för det behöver inte va så mkt luft. men det är bara tycke och smak. */
 
 
 
@@ -17,12 +35,14 @@ html {
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
   color: white;
+  font-size: 2rem;
+  /*Från och med nu, som du ser, så definierar vi font-size i rem. Det innebär att 2rem som det står här, är baserat på din grunddefinierade font-size (rad 16), och din logga ska vara dubbelt så stor som grunddefintionen. osv.*/
 }
 
 .nav-links {
   font-family: 'Courier New', Courier, monospace;
   font-size: 40px;
-
+  font-size: 1.2rem;
 }
 
 a {
@@ -31,7 +51,7 @@ a {
 
 h1 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 120px;
+  font-size: 2.5rem;
   margin-top: 20px;
   margin-bottom: 20px;
 
@@ -40,13 +60,13 @@ h1 {
 
 h2 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 90px;
+  font-size: 2rem;
 
 }
 
 h3 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 50px;
+  font-size: 1.5rem;
 
 }
 
@@ -55,24 +75,24 @@ h3 {
 
 .intro-copy {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 15px;
+  font-size: 1rem;
   margin-bottom: 70px;
 
 }
 
 .topfive {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 50px;
+  font-size: 1.2rem;
 
 }
 
 .short-intro {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .the-bar {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 15px;
+  font-size: 1rem;
 
 }
