@@ -133,42 +133,93 @@ h3 {
   margin-bottom: -2rem;
 }
 
-
-.topfourheadlines ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  background-color: pink;
-  margin-top: 2rem;
-
-
+ol {
+  padding-left: 2rem;
 }
 
 ul {
   list-style: none;
 }
 
+.topfourheadlines {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.topfourheadlines>ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 2rem;
+
+}
+
+
 .topfourheadlines li {
-  border: solid 5px black;
-  height: 27rem;
+  background-color: pink;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0.065rem 0.25rem;
+  padding: 1rem;
+}
 
+.topfourheadlines li h3,
+.topfourheadlines li p {
+  color: white;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
 
 }
 
-.topfourheadlines li figure img {
+.topfourheadlines>ul>li>figure {
+  margin: 0;
+  max-height: 272px;
+  overflow: hidden;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  position: relative;
+
+}
+
+.topfourheadlines>li>figure>img {
   width: 100%;
-
 }
 
-
+.topfourheadlines>ul>li>figure>figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
 .top-item-one .short-intro {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
 }
 
+.second-big {
+  display: flex;
+  align-items: end;
+  height: 550px;
+  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_\(kopia\).jpg");
+  background-size: cover;
+  background-position: center;
 
 
+}
+
+.second-big h2 {
+  padding-left: 20px;
+  color: white;
+
+}
+
+.second-big p {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
 
 .the-bar {
   font-family: 'Courier New', Courier, monospace;
