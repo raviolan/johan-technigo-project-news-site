@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 
-/* detta övre kommandot med stjärna lade jag till för att det blir typ som en reset baserad på skärmstorlek. Se det som att städa sin whitebord innan man börjar rita på den.*/
 
-html,
+
+
 body {
-  background: #0025ff;
-  color: #fff;
+  background: white;
+  color: black;
   height: 100%;
   width: 100%;
   /*height och width här refererar till hela grundkoden/din body. Nu har vi berättat för din body att den alltid ska ta upp hela den tillgängliga skärmstorleken.*/
@@ -23,15 +23,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 5px solid white;
-  margin-top: -1rem;
+  border: 5px solid black;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 
 }
 
 .logo {
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
-  color: white;
+  color: black;
   font-size: 2rem;
 
 }
@@ -60,7 +61,7 @@ body {
 .navbar-hamburger .bar {
   width: 30px;
   height: 4px;
-  background-color: white;
+  background-color: black;
 
 
 }
@@ -68,7 +69,7 @@ body {
 
 a {
   font-family: 'Courier New', Courier, monospace;
-  color: #fff;
+  color: black;
   font-size: 0.8rem;
 }
 
@@ -96,8 +97,19 @@ h3 {
 
 }
 
-
-.big-news {}
+.big-news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 550px;
+  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_\(kopia\).jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
 .intro-copy {
   font-family: 'Courier New', Courier, monospace;
@@ -108,18 +120,55 @@ h3 {
 
 .topfive {
   font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   font-size: 1.2rem;
+  line-height: 3.5rem;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  background-color: aquamarine;
+
 }
 
-.topfourheadlines {
-  padding-top: 2rem;
+.topfive h3 {
+  margin-bottom: -2rem;
+}
+
+
+.topfourheadlines ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  background-color: pink;
+  margin-top: 2rem;
+
 
 }
 
-.short-intro {
+ul {
+  list-style: none;
+}
+
+.topfourheadlines li {
+  border: solid 5px black;
+  height: 27rem;
+
+
+}
+
+.topfourheadlines li figure img {
+  width: 100%;
+
+}
+
+
+
+.top-item-one .short-intro {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
 }
+
+
+
 
 .the-bar {
   font-family: 'Courier New', Courier, monospace;
