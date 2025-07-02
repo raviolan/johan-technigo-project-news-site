@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 5px solid black;
+  border: 2px solid black;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 
@@ -31,43 +31,23 @@ body {
 
 .logo {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 100px;
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
 
 }
 
 .navbar-menu.active {
   display: flex;
-}
-
-.navbar-menu {
-  display: flex;
-  flex-direction: column;
-
-}
-
-
-.navbar-hamburger {
-  display: flex;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
-  justify-content: space-around;
-  height: 30px;
-
-}
-
-.navbar-hamburger .bar {
-  width: 30px;
-  height: 4px;
-  background-color: black;
-
+  justify-content: end;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
 
 }
 
 
-a {
+p {
   font-family: 'Courier New', Courier, monospace;
   color: black;
   font-size: 0.8rem;
@@ -99,15 +79,14 @@ h3 {
 
 .big-news {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  position: relative;
+  text-align: center;
   height: 550px;
-  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_\(kopia\).jpg");
+  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_2\ 2.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  text-align: center;
   padding: 20px;
 }
 
@@ -115,22 +94,29 @@ h3 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   margin-bottom: 2rem;
+  color: white;
+  text-align: center;
 
 }
 
 .topfive {
   font-family: 'Courier New', Courier, monospace;
+  color: white;
   font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 3.5rem;
-  padding-left: 1rem;
+  font-size: 2rem;
+  line-height: 5rem;
+  padding-left: 3rem;
   margin-top: 2rem;
-  background-color: aquamarine;
+  background-color: black;
 
 }
 
 .topfive h3 {
+  font-size: 1.7rem;
+  color: white;
   margin-bottom: -2rem;
+  text-align: center;
+
 }
 
 ol {
@@ -158,7 +144,6 @@ ul {
 
 
 .topfourheadlines li {
-  background-color: pink;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0.065rem 0.25rem;
   padding: 1rem;
 }
@@ -181,7 +166,7 @@ ul {
 
 }
 
-.topfourheadlines>li>figure>img {
+.topfourheadlines>ul>li>figure>img {
   width: 100%;
 }
 
@@ -199,9 +184,12 @@ ul {
 
 .second-big {
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  text-align: center;
+  justify-content: end;
+  padding: 3rem;
   height: 550px;
-  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_\(kopia\).jpg");
+  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_Tone_Yellow.jpg");
   background-size: cover;
   background-position: center;
 
@@ -209,20 +197,79 @@ ul {
 }
 
 .second-big h2 {
-  padding-left: 20px;
+  text-align: center;
   color: white;
 
 }
 
-.second-big p {
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+.two-stories {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 40px;
+
 
 }
+
+.end-stories-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 450px;
+  padding-bottom: 1rem;
+  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_Tone_Purple.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.end-stories-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 450px;
+  padding-bottom: 1rem;
+  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_Tone_Brown.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.end-stories-one h2 {
+  text-align: center;
+  color: white;
+}
+
+.end-stories-two h2 {
+  text-align: center;
+  color: white;
+}
+
 
 .the-bar {
+  padding-top: 20px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
+  text-align: center;
+
+}
+
+@media (min-width: 1024px) {
+
+  .big-news,
+  .second-big,
+  .end-stories-one,
+  .end-stories-two {
+    background-position: center top;
+
+  }
+
+  .topfive {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 20vh;
+  }
+
 
 }
