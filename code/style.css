@@ -83,7 +83,7 @@ h3 {
   justify-content: center;
   text-align: center;
   height: 550px;
-  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_2\ 2.jpg");
+  background-image: url("/bilder/Johan_Mark_2\ 2.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -105,7 +105,6 @@ h3 {
   font-weight: bold;
   font-size: 2rem;
   line-height: 5rem;
-  padding-left: 3rem;
   margin-top: 2rem;
   background-color: black;
 
@@ -119,7 +118,9 @@ h3 {
 
 }
 
-ol {
+ol li {
+  list-style: decimal inside;
+  /*DETTA är det som gör att siffrorna hamnar på samma nivå som listans innehåll. Kolla marginalerna i inspect så förstår du! */
   padding-left: 2rem;
 }
 
@@ -189,7 +190,7 @@ ul {
   justify-content: end;
   padding: 3rem;
   height: 550px;
-  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_Tone_Yellow.jpg");
+  background-image: url("/bilder/Johan_Mark_Tone_Yellow.jpg");
   background-size: cover;
   background-position: center;
 
@@ -218,7 +219,7 @@ ul {
   text-align: center;
   height: 450px;
   padding-bottom: 1rem;
-  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_Tone_Purple.jpg");
+  background-image: url("/bilder/Johan_Mark_Tone_Purple.jpg");
   background-size: cover;
   background-position: center;
 
@@ -231,7 +232,7 @@ ul {
   text-align: center;
   height: 450px;
   padding-bottom: 1rem;
-  background-image: url("/technigo-project-news-site/bilder/Johan_Mark_Tone_Brown.jpg");
+  background-image: url("/bilder/Johan_Mark_Tone_Brown.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -265,10 +266,11 @@ ul {
 
   }
 
-  .topfive {
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 20vh;
+
+  .topfive ol {
+    /*här kmr din wrapping! Eller snarare, jag sket i den och gjorde det till två kolumner bara.*/
+    column-count: 2;
+    column-gap: 4rem;
   }
 
 
