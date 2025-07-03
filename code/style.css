@@ -128,7 +128,6 @@ ul {
 }
 
 .topfourheadlines {
-  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
@@ -136,8 +135,8 @@ ul {
 
 .topfourheadlines>ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: auto;
+  gap: 1rem;
   margin-top: 2rem;
 
 }
@@ -208,7 +207,6 @@ ul {
   gap: 1rem;
   padding-top: 40px;
 
-
 }
 
 .end-stories-one {
@@ -255,6 +253,22 @@ ul {
 
 }
 
+
+@media (min-width: 668px) {
+
+  .two-stories {
+    flex-direction: row;
+
+  }
+
+  .topfourheadlines>ul {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
 @media (min-width: 1024px) {
 
   .big-news,
@@ -271,5 +285,12 @@ ul {
     max-height: 20vh;
   }
 
+  .topfourheadlines>ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
 
+  .two-stories {}
 }
